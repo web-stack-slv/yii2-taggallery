@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class GalleryAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/farawayslv/yii2-gallery/assets';
+    public $sourcePath = '@vendor/farawayslv/yii2-taggallery/assets';
     
     public $css = [
         'css/bootstrap.min.css',
