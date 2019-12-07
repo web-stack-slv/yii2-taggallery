@@ -1,0 +1,21 @@
+{
+    "name": "farawayslv/yii2-taggallery",
+    "description": "Image Gallery with image sources as tag <gallery> and texts",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","gallery","tag"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "FarawaySlv",
+            "email": "turchik18@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "farawayslv\\taggallery\\": ""
+        }
+    }
+}
