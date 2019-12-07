@@ -29,7 +29,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \farawayslv\gallery\Gallery::widget([
+<?= \farawayslv\taggallery\GalleryTag::widget([
     'title' => (string) Gallery title. Optional,
     'description' => (string) Gallery description. Optional,
     'content' => (string) Required parameter. Text content with <gallery>/path</gallery> tags
