@@ -1,5 +1,6 @@
 {
     "name": "farawayslv/yii2-taggallery",
+    "version": "1.0.0",
     "description": "Image Gallery with image sources as tag <gallery> and texts",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","gallery","tag"],
