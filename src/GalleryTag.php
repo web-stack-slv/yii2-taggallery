@@ -184,7 +184,7 @@ class GalleryTag extends Widget
 
     private function parseDir($dir, &$results = [])
     {
-        $rootPath = Yii::getAlias('@webroot');
+        $rootPath = Yii::getAlias('@webroot').'/';
         
         if(file_exists($rootPath.$dir)) 
         {
