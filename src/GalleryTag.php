@@ -75,7 +75,17 @@ class GalleryTag extends Widget
     private function renderContentBlock()
     {
         $newContent = '';
-        preg_match_all('#<gallery>(.+?)</gallery>#is', $this->content, $sources);
+        $sources = [];
+        preg_match_all('#<gallery>(.+?)</gallery>#is', $this->content, $tmp_sources);
+        
+        if(isset($tmp_sources[1]))
+        {
+            $sources = $tmp_sources[1];
+        } 
+        elseif(isset($tmp_sources[0]))
+        {
+            $sources = $tmp_sources[0];
+        }
 
         $texts = preg_split('#<gallery>(.+?)</gallery>#is', $this->content);
         for ($i=0; $i < count($texts); $i++) { 
@@ -83,9 +93,9 @@ class GalleryTag extends Widget
             {
                 $newContent .= $this->renderTextBlock($texts[$i]);
             }
-            if($sources[1][$i] && trim($sources[1][$i]) != '')
+            if($sources[$i] && trim($sources[$i]) != '')
             {
-                $newContent .= $this->renderImageBlock($sources[1][$i]);
+                $newContent .= $this->renderImageBlock($sources[$i]);
             }
         }
         return  $newContent;
