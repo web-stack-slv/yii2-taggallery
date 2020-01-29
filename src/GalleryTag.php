@@ -93,7 +93,7 @@ class GalleryTag extends Widget
             {
                 $newContent .= $this->renderTextBlock($texts[$i]);
             }
-            if($sources[$i] && trim($sources[$i]) != '')
+            if(isset($sources[$i]) && trim($sources[$i]) != '')
             {
                 $newContent .= $this->renderImageBlock($sources[$i]);
             }
